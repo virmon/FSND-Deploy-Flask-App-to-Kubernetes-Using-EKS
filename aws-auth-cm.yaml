@@ -5,7 +5,7 @@ metadata:
   namespace: kube-system
 data:
   mapRoles: |
-    - rolearn: arn:aws:iam::virmon:role/UdacityFlaskDeployCBKubectlRole
+    - rolearn: arn:aws:iam::422940076496:role/UdacityFlaskDeployCBKubectlRole
       username: build
       groups:
         - system:bootstrappers
