@@ -10,6 +10,7 @@ phases:
       - chmod +x ./kubectl ./aws-iam-authenticator
       - export PATH=$PWD/:$PATH
       - apt-get update && apt-get -y install jq python3-pip python3-dev && pip3 install --upgrade awscli
+      - pip install -r requirements.txt
       - pip3 install -r requirements.txt
   pre_build:
       commands:
