@@ -6,8 +6,12 @@ metadata:
 data:
   mapRoles: |
     - rolearn: arn:aws:iam::422940076496:role/UdacityFlaskDeployCBKubectlRole
-      username: build
+      username: system:node:{{EC2PrivateDNSName}}
       groups:
         - system:bootstrappers
         - system:nodes
+  mapUsers: |
+    - userarn: arn:aws:iam::422940076496:user/virmon
+      username: virmon
+      groups: 
         - system:masters
